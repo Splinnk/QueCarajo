@@ -1,0 +1,324 @@
+:root {
+  --pink: #e8116f;
+  --green: #cbe80b;
+  --blue: #19a1c7;
+  --white: #fdfdfd;
+  --black: #000000;
+}
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--white) ;
+  background-color: var(--black) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--blue);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--green);
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--pink);
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+a {
+  color: var(--pink);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--black);
+  padding: 20px;
+  /*text-align: center;*/
+}
+
+header h1 {
+  font-size: 3rem;
+  color: var(--white);
+}
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.image-container .image-link {
+  position: relative;
+  width: 45%; /* ajusta el ancho de las imágenes */
+  margin: 2.5%; /* ajusta el margen de las imágenes */
+  float: left; /* hace que las imágenes se coloquen lado a lado */
+}
+
+.image-container .image-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.image-container .image-link .hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.image-container .image-link:hover img {
+  opacity: 0;
+}
+
+.image-container .image-link:hover .hover-image {
+  opacity: 1;
+}
+
+.image-container .image-trigger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.section-left {
+  float: left;
+  width: 100%;
+}
+
+.section-right {
+  float: right;
+  width: 100%;
+}
+
+.section-left .background-image {
+  background-image: url('../img/Recurso\ botón\ de\ instagram.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-right .background-image {
+  background-image: url('../img/Recurso\ botón\ de\ información.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.3) !important; /* reducir la opacidad del fondo blanco */
+  border-radius: 10px;
+  width: 35%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 10px;
+}
+
+.section-left .card{
+  margin-right: auto;
+}
+.section-right .card{
+  margin-left: auto;
+}
+.section-left .card button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: auto;
+  margin-left: 0;
+  margin-right: auto;
+  float: left;
+}
+
+
+.section-right .card button{
+  padding: 10px 20px;
+  border: none;
+  
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: auto;
+  margin-left: 0;
+  margin-right: auto;
+  float: right;
+}
+.card button:hover {
+  box-shadow: 0 0 5px var(--white), 0 0 10px var(--pink), 0 0 15px var(--white), 0 0 20px var(--green);
+}
+
+.card p {
+  margin-bottom: 20px;
+}
+
+section + section {
+  padding-top: 20px;
+}
+/* Navigation Styles 
+nav {
+  background-color: var(--green);
+  padding: 10px;
+   text-align: center; 
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: var(--black);
+}
+
+nav ul li a:hover {
+  color: var(--blue);
+} */
+.bg-neon {
+  color: var(--white);
+  text-shadow: 0 0 5px var(--pink), 0 0 10px var(--pink), 0 0 15px var(--pink), 0 0 20px var(--pink);
+}
+.neon {
+  text-shadow: 0 0 5px var(--blue), 0 0 10px var(--blue), 0 0 15px var(--blue), 0 0 20px var(--blue);
+  color: #ffffff;
+  font-weight: bold;
+}
+.neon-g {
+  text-shadow: 0 0 5px var(--green), 0 0 10px var(--green), 0 0 15px var(--green), 0 0 20px var(--green);
+  color: #ffffff;
+  font-weight: bold;
+}
+.navbar {
+  z-index: 1;
+  color: var(--white) !important;
+}
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+main h2 {
+  color: var(--blue);
+}
+
+main p {
+  line-height: 1.5;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--black);
+  padding: 10px;
+  text-align: center;
+  color: var(--white);
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .image-container .image-link {
+    width: 90%; /* ajusta el ancho de las imágenes en pantallas pequeñas */
+    margin: 5%; /* ajusta el margen de las imágenes en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container .image-link {
+    width: 100%; /* ajusta el ancho de las imágenes en pantallas muy pequeñas */
+    margin: 0; /* ajusta el margen de las imágenes en pantallas muy pequeñas */
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .navbar-toggler {
+    display: block;
+  }
+  body {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .background-image {
+    height: 50vh;
+  }
+
+  .cardL {
+    width: 100%;
+    margin-left: 0;
+  }
+  .cardR {
+    width: 100%;
+    margin-right: 0 !important;
+  }
+  .card button {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
