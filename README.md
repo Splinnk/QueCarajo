@@ -1,53 +1,76 @@
-# 📚 Guía para Documentar APIs con Swagger Editor (Sin Instalación) 🌐
+👕 QueCarajo - Tienda Online de Ropa
+QueCarajo es una plataforma web moderna y provocadora para la venta de ropa urbana, casual y alternativa. Nuestro objetivo es romper esquemas, ofrecer prendas con actitud y brindar una experiencia de compra única, rápida y segura.
 
-## Introducción
+🛍️ Características Principales
+🧾 Catálogo de productos por categoría, género y estilo
 
-Bienvenido a esta guía práctica sobre cómo documentar tus APIs utilizando **Swagger Editor** sin necesidad de instalar nada en tu ordenador. Swagger Editor es una herramienta poderosa que te permite diseñar, construir y documentar APIs de manera interactiva. 
+🛒 Carrito de compras y proceso de checkout
 
-## 🛠️ Requisitos Previos
+💳 Integración con pasarelas de pago (Stripe, PayPal, etc.)
 
-Antes de comenzar, asegúrate de tener lo siguiente:
-- Un navegador web actualizado (Chrome, Firefox, Safari, etc.).
-- Conexión a internet.
+🧑‍💻 Registro e inicio de sesión de usuarios
 
-## 🚀 Pasos para Usar Swagger Editor
+📦 Gestión de pedidos y seguimiento de envíos
 
-### 1. Acceder a Swagger Editor
+📱 Diseño responsivo adaptado a móviles y tablets
 
-Para acceder a Swagger Editor, simplemente visita la siguiente URL: 
+🛠 Panel de administración para controlar productos, stock y pedidos
 
-👉 [**Swagger Editor**](https://editor.swagger.io/) 👈
+🖥️ Tecnologías Utilizadas
+Frontend: HTML5, CSS3, JavaScript, Bootstrap / Tailwind CSS
 
-### 2. Entorno del Editor
+Backend: PHP (Laravel) / Node.js / Python (Django)
 
-Al abrir Swagger Editor, verás una interfaz dividida en dos paneles:
-- **Panel Izquierdo:** Donde escribirás el código YAML para definir tu API.
-- **Panel Derecho:** Vista previa interactiva de la documentación generada.
+Base de Datos: MySQL / PostgreSQL
 
-![Swagger Editor Interface](https://user-images.githubusercontent.com/25639885/120939613-7740c080-c6e1-11eb-9f37-1f08e8d8f9f8.png)
+Pasarela de Pago: Stripe, PayPal u otras integraciones
 
-### 3. Crear una API Básica
+📁 Estructura del Proyecto
+csharp
+Copy
+Edit
+QueCarajo/
+├── frontend/           # Sitio web (vistas, estilos, scripts)
+├── backend/            # Lógica de servidor, APIs, autenticación
+├── database/           # Scripts SQL para la base de datos
+├── admin/              # Panel de administración
+├── public/             # Imágenes, logos y recursos estáticos
+└── README.md           # Este archivo
+⚙️ Instalación y Configuración
+Clona el repositorio:
 
-Puedes comenzar con una plantilla básica que Swagger Editor proporciona por defecto. Para empezar desde cero, elimina el contenido existente y utiliza el siguiente ejemplo mínimo:
+bash
+Copy
+Edit
+git clone https://github.com/tuusuario/QueCarajo.git
+cd QueCarajo
+Instala dependencias (si aplica):
 
-```yaml
-openapi: 3.0.0
-info:
-  title: Mi API de Ejemplo
-  description: Una API sencilla para demostrar Swagger Editor.
-  version: 1.0.0
-paths:
-  /saludo:
-    get:
-      summary: Devuelve un saludo
-      responses:
-        '200':
-          description: Éxito
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  mensaje:
-                    type: string
-                    example: "Hola, mundo!"
+Para Laravel: composer install
+
+Para Node.js: npm install
+
+Configura la base de datos:
+
+Crea una base de datos vacía.
+
+Importa el archivo database/schema.sql.
+
+Configura el archivo .env con tus credenciales y claves de pasarela de pago.
+
+Ejecuta el servidor:
+
+nginx
+Copy
+Edit
+php artisan serve
+Accede en tu navegador a: http://localhost:8000
+
+🧑‍🎨 Estilo de Marca
+Nombre: QueCarajo
+
+Identidad: Irreverente, directa, juvenil
+
+Paleta de colores: Negro, blanco, rojo y tonos neón (según temporada)
+
+Tipografía: Moderna y fuerte, estilo callejero
